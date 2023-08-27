@@ -309,6 +309,14 @@ footer nav a:hover{
     background-color: whitesmoke;
 }
 
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .code{
     width: 100%;
     height: 60px;
@@ -395,7 +403,7 @@ main{
 }
 
 .left{
-    width: 70%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -405,7 +413,7 @@ main{
     background-position: center center;
     background-repeat: no-repeat; 
     background-size: 100%; 
-    position: relative;
+    object-fit: cover;
 
 }
 
@@ -419,16 +427,6 @@ main{
     align-items: flex-start;
 }
 
-.left .student{
-    width: 150px;
-    height: 200px;
-    border: 7px solid white;
-    position: absolute;
-    right:-75px;
-    bottom: 250px;
-
-}
-
 .left header{
     width: 100%;
     display: flex;   
@@ -439,10 +437,10 @@ main{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 35px;
+    gap: 38px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 200px;
+    padding-top: 80px;
 
 }
 
@@ -450,7 +448,7 @@ main{
     text-decoration: none;
     color: darkorange;
     font-weight: 600;
-    font-size: 5px;
+    font-size: 8px;
 }
 
 .left header nav a:hover{
@@ -468,7 +466,7 @@ main{
 
 .skill h1{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
     padding-top: 50px;
 }
@@ -490,12 +488,12 @@ main{
 }
 
 .buttons-box{
-    width: 35%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 80px;
     gap: 30px;
     padding-left: 25px;
 }
@@ -508,7 +506,7 @@ main{
     color: darkorange;
     background-color: transparent;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
     border: 2px solid white;
 
 }
@@ -529,7 +527,7 @@ main{
     align-items: center;
     gap: 8px;
     padding-left: 25px;
-    padding-top: 130px;
+    padding-top: 200px;
 
 }
 
@@ -546,22 +544,6 @@ main{
     transform: scale(1.5);
 }
 
-.right{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-right: 20px;
-    padding-top: 25px;
-    background-color: whitesmoke;
-}
-
-.right .info{
-    width: 30px;
-}
-
 footer{
     width: 100%;
     height: 40px;
@@ -574,7 +556,7 @@ footer{
 
 footer p{
     font-size: 5px;
-    font-weight: 800;
+    font-weight: 500;
     letter-spacing: 1px;
     font-family: monospace;
 }
@@ -591,7 +573,7 @@ footer nav a{
     text-decoration: none;
     color: gray;
     font-family: monospace;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 5px;
 }
 
