@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.code{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+}
+
+.code p{
+    font-size: 15px;
+    color:gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.code a{
+    text-decoration: none;
+    color:gray;
+}
+
+.code a:hover{
+    color: darkorange;
+}
+
+.logo{
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid gray;
+
+}
+
+.flag{
+    display: block;
+    width: 20px;
+    height: 15px;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    background-color: white;
+}
+
+.theme-btn{
+    display: flex;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: silver;
+    cursor: pointer;
+    position: relative;
+}
+
+.theme-ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: gray;
+
+}
+
+.code div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.left{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0, 255, 100, 0.8), rgba(0, 255, 100, 0.8)), url('./img2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: 100%; 
+    position: relative;
+
+}
+
+
+
+
+.left .student{
+    width: 300px;
+    height: 350px;
+    border: 7px solid white;
+    position: absolute;
+    right:-150px;
+    bottom: 150px;
+
+}
+
+
+
+.left header{
+    width: 100%;
+    display: flex;   
+}
+
+.left header nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    padding: 30px;
+
+}
+
+.left header nav a{
+    text-decoration: none;
+    color: darkorange;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.left header nav a:hover{
+    color: gray;
+}
+
+.left .skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 60px;
+    
+}
+
+.skill h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+.skill .line{
+    width: 98%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#ccc;
+
+}
+
+.skill .line::before{
+    content: "";
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: darkorange;
+}
+
+.buttons-box{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 120px;
+    gap: 30px;
+    padding-left: 60px;
+}
+
+.buttons-box button {
+    border-radius: 40px;
+    padding: 10px 15px;
+    width: 100%;
+    height: 50px;
+    color: darkorange;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 20px;
+    border: 2px solid white;
+
+}
+
+.buttons-box button a{
+    text-decoration: none;
+    color: darkorange;
+}
+
+.buttons-box button a:hover{
+    color: darkorange;
+}
+
+.left .social{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-left: 60px;
+    padding-top: 200px;
+
+}
+
+.social a{
+    color: darkorange;
+}
+
+.social a img{
+    transition: 0.5s all ease-in-out;
+    color: darkorange;
+}
+
+.social a:hover img{
+    transform: scale(1.5);
+}
+
+ .right{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 30px;
+    padding-top: 30px;
+    background-color: whitesmoke;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+footer p{
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+
+footer nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+
+}
+
+footer nav a{
+    text-decoration: none;
+    color: gray;
+    font-family: monospace;
+    font-weight: 300;
+}
+
+footer nav a:hover{
+    color: darkorange;
+}
+
+
+
+@media(max-width:450px){
+   body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.code{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.code p{
+    font-size: 11px;
+    color:gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.code a{
+    text-decoration: none;
+    color:gray;
+}
+
+.code a:hover{
+    color: darkorange;
+}
+
+.logo{
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid gray;
+
+}
+
+.flag{
+    display: block;
+    width: 15px;
+    height: 10px;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    background-color: white;
+}
+
+.theme-btn{
+    display: flex;
+    width: 20px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: silver;
+    cursor: pointer;
+    position: relative;
+}
+
+.theme-ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: gray;
+
+}
+
+.code div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 13px;
+    padding-right: 15px;
+}
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0, 255, 100, 0.8), rgba(0, 255, 100, 0.8)), url('./img2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: 100%; 
+    position: relative;
+
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.left .student{
+    width: 150px;
+    height: 200px;
+    border: 7px solid white;
+    position: absolute;
+    right:-75px;
+    bottom: 245px;
+
+}
+
+.left header{
+    width: 100%;
+    display: flex;   
+}
+
+.left header nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+    padding-left: 10px;
+    padding-top: 100px;
+
+}
+
+.left header nav a{
+    text-decoration: none;
+    color: darkorange;
+    font-weight: 600;
+    font-size: 9px;
+}
+
+.left header nav a:hover{
+    color: gray;
+}
+
+.left .skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    
+}
+
+.skill h1{
+    color: white;
+    font-size: 27px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+.skill .line{
+    width: 98%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#ccc;
+
+}
+
+.skill .line::before{
+    content: "";
+    width: 100%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: darkorange;
+}
+
+.buttons-box{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 70px;
+    gap: 30px;
+    padding-left: 30px;
+}
+
+.buttons-box button {
+    border-radius: 40px;
+    padding: 1px 18px;
+    width: 100%;
+    height: 28px;
+    color: darkorange;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 15px;
+    border: 2px solid white;
+
+}
+
+.buttons-box button a{
+    text-decoration: none;
+    color: darkorange;
+}
+
+.buttons-box button a:hover{
+    color: darkorange;
+}
+
+.left .social{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 30px;
+    padding-top: 130px;
+
+}
+
+.social a{
+    color: darkorange;
+}
+
+.social a img{
+    transition: 0.5s all ease-in-out;
+    color: darkorange;
+}
+
+.social a:hover img{
+    transform: scale(1.5);
+}
+
+.right{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 25px;
+    padding-top: 30px;
+    background-color: whitesmoke;
+}
+
+.right .info{
+    width: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer p{
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+
+footer nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+}
+
+footer nav a{
+    text-decoration: none;
+    color: gray;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 7px;
+}
+
+footer nav a:hover{
+    color: darkorange;
+}
+}
+
+
