@@ -298,7 +298,7 @@ footer nav a:hover{
 
 
 
-@media(max-width:450px){
+@media(max-width:500px){
    body{
     width: 100%;
     height: 100vh;
@@ -391,7 +391,7 @@ footer nav a:hover{
     justify-content: flex-end;
     align-items: center;
     gap: 13px;
-    padding-right: 15px;
+    padding-right: 10px;
 }
 main{
     width: 100%;
@@ -413,7 +413,7 @@ main{
     background-position: center center;
     background-repeat: no-repeat; 
     background-size: 100%; 
-    position: relative;
+    object-fit: cover;
 
 }
 
@@ -440,7 +440,7 @@ main{
     gap: 38px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 100px;
+    padding-top: 30px;
 
 }
 
@@ -448,7 +448,7 @@ main{
     text-decoration: none;
     color: darkorange;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .left header nav a:hover{
@@ -461,12 +461,13 @@ main{
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 25px;
+    padding-top: 40px;
     
 }
 
 .skill h1{
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 400;
     padding-top: 50px;
 }
@@ -527,7 +528,7 @@ main{
     align-items: center;
     gap: 8px;
     padding-left: 25px;
-    padding-top: 280px;
+    padding-top: 200px;
 
 }
 
@@ -556,7 +557,7 @@ footer{
 
 footer p{
     font-size: 5px;
-    font-weight: 800;
+    font-weight: 500;
     letter-spacing: 1px;
     font-family: monospace;
 }
@@ -573,7 +574,7 @@ footer nav a{
     text-decoration: none;
     color: gray;
     font-family: monospace;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 5px;
 }
 
